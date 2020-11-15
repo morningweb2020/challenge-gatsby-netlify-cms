@@ -1,6 +1,6 @@
 ---
 templateKey: 'history-page'
-path: /history/1
+path: /history1
 title: CHAPTER I.
 heading: Down the Rabbit-Hole
 main:
