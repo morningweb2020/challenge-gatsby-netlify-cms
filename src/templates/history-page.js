@@ -51,12 +51,15 @@ HistoryPage.propTypes = {
 
 export default HistoryPage
 
-export const aboutPageQuery = graphql`
+export const historyPageQuery = graphql`
   query HistoryPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
+        heading
+        main {
+          description          
+        }
       }
     }
   }
