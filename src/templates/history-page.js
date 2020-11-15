@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const HistoryPageTemplate = ({ title, content, contentComponent }) => {
+export const HistoryPageTemplate = ({ title, heading, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
