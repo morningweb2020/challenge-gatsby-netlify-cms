@@ -67,18 +67,18 @@ collections:
   - name: "history"
     label: "History"
     files: 
-      - label: "History 1"
+      - file: "src/pages/histories/history1.md"
+        label: "History 1"
         name: "history1"
-        file: "src/pages/histories/history1.md"
-        fileds: 
+        fields: 
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "history-page1"}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Main, name: main, widget: object, fields: [{label: Description, name: description, widget: text}]}, 
-      - label: "History 2"
+      - file: "src/pages/histories/history2.md"
+        label: "History 2"
         name: "history2"
-        file: "src/pages/histories/history2.md"
-        fileds: 
+        fields: 
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "history-page2"}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
