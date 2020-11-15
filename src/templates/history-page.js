@@ -44,7 +44,7 @@ const HistoryPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
-        content={post.frontmatter.main.description}
+        content={post.frontmatter.main}
       />
     </Layout>
   )
@@ -63,7 +63,11 @@ export const historyPageQuery = graphql`
         title
         heading
         main {
-          description          
+          text
+          quote
+          text
+          quote
+          text          
         }
       }
     }
