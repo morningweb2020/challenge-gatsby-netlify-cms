@@ -1,5 +1,5 @@
 ---
-templateKey: 'history-page-1'
+templateKey: 'history-page'
 path: /history/1
 title: CHAPTER II.
 heading: The Pool of Tears
