@@ -13,11 +13,11 @@ export const HistoryPageTemplate = ({ title, content, contentComponent }) => {
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                dfasdfasfasdfasdf
-              </h2>
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              <h1 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
+              </h1>
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                {heading}
               </h2>
               <PageContent className="content" content={content} />
             </div>
@@ -30,6 +30,7 @@ export const HistoryPageTemplate = ({ title, content, contentComponent }) => {
 
 HistoryPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  heading: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -42,7 +43,8 @@ const HistoryPage = ({ data }) => {
       <HistoryPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
+        heading={post.frontmatter.heading}
+        content={post.frontmatter.main.description}
       />
     </Layout>
   )
