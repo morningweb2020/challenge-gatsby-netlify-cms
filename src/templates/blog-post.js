@@ -60,7 +60,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        {post.frontmatter.code}
+        {post.frontmatter.scripts}
       </Helmet>
       <BlogPostTemplate
         content={post.html}
