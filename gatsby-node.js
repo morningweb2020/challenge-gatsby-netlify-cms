@@ -85,17 +85,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-
-exports.createSchemaCustomization = ({ actions, schema }) => {
-  const { createTypes } = actions
-  const typeDefs = [
-    schema.buildObjectType({
-      name: "Script",
-      fields: {
-        script: "String!",
-      },
-      interfaces: ["Node"],
-    }),
-  ]
-  createTypes(typeDefs)
-}
