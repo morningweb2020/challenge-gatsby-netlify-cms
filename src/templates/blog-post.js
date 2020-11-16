@@ -56,9 +56,9 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-  alert(post.frontmatter.script)
   return (
     <Layout>
+      <h4>{post.frontmatter.script}</h4>
       <Helmet>
         {post.frontmatter.script}
       </Helmet>
