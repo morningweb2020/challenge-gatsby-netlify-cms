@@ -9,7 +9,7 @@ tags:
   - flavor
   - tasting
 script:
-  window.alert('The most dangerous drinking game is seeing how long I can go without coffee')
+  <script> window.alert('The most dangerous drinking game is seeing how long I can go without coffee') </script>
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 

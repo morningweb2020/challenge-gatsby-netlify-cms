@@ -9,7 +9,7 @@ tags:
   - brewing
   - chemex
 script:
-  window.alert('The most dangerous drinking game is seeing how long I can go without coffee')
+  <script> window.alert('The most dangerous drinking game is seeing how long I can go without coffee') </script>
 ---
 ![chemex](/img/chemex.jpg)
 
