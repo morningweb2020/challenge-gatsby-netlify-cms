@@ -12,7 +12,7 @@ tags:
   - flavor
   - tasting
 script:
-  <script> window.alert('The most dangerous drinking game is seeing how long I can go without coffee') </script>
+  window.alert('The most dangerous drinking game is seeing how long I can go without coffee')
 ---
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
