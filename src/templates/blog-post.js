@@ -60,7 +60,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        {post.frontmatter.scripts}
+        {post.frontmatter.script}
       </Helmet>
       <BlogPostTemplate
         content={post.html}
@@ -100,7 +100,7 @@ export const pageQuery = graphql`
         title
         description
         tags
-        scripts
+        script
       }
     }
   }

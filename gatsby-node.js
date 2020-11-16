@@ -85,20 +85,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-
-// In your `gatsby-node.js`:
-exports.createResolvers = ({createResolvers}) => {
-  createResolvers({
-    // `SanityBlogPost` being the type name you want to extend
-    scripts: {
-      // `happiness` being the field name you want to add
-      scripts: {
-        // type is the _GraphQL_ type name, so you can do `String!` for "non-null string", `Int` for integer, `SanityCategory` for a document or object of type  `SanityCategory`.
-        type: 'String',
-        resolve(source, args, context, info) {
-          return 'is customization through GraphQL'
-        }
-      }
-    }
-  })
-}
