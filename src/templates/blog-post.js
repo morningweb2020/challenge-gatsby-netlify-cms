@@ -54,12 +54,19 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
+extractScriptContents((script) => {
+  p.replace('dog', 'monkey')
+  let s = script.replace('<script>','')
+  s = s.replace('</script>','')
+  return s
+});
+
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   return (
     <Layout>
       <Helmet>
-        <script>{post.frontmatter.script}</script>
+        {post.frontmatter.script}
       </Helmet>
       <BlogPostTemplate
         content={post.html}
